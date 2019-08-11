@@ -30,7 +30,7 @@ On your PRTG system place the file prtg.standardlookups.nas.abstatus.ovl in *INS
 
 In PRTG create under your device which represents your Synology a SSH custom advanced senor.
 
-Choose under "Script" this script and enter under "Parameters" the name of the volume you want to monitor: e.g. volume1.
+Choose under "Script" this script and enter under "Parameters" the name of the device backed up in Active Backup for Business you want to monitor: e.g. Server1.
 
 ![Screenshot1](https://github.com/WAdama/nas_ab_status/blob/master/images/nas_ab_status.png)
 
