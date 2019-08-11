@@ -28,8 +28,9 @@ Choose under "Script" this script and enter under "Parameters" the name of the v
 
 ![Screenshot1](https://github.com/WAdama/nas_ab_status/blob/master/images/nas_ab_status.png)
 
-This script will create for channels in this sensor:
+This script will create four channels in this sensor:
 
 
 This script will set default values for limits in the Used (%) channel:
 
+![Screenshot1](https://github.com/WAdama/nas_ab_status/blob/master/images/nas_ab_status_sensor.png)
