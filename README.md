@@ -1,7 +1,7 @@
 # nas_ab_status
 Bash script for PRTG by Paessler to monitoring status of device backup in Synology Active Backup for Business
 
-The sensor will show the status of the last backup, how many data were transferred, the duration and the time passed since the laste backup.
+The sensor will show the status of the last backup, how many data were transferred, the duration and the time passed since the laste backup. nas_ab_status_m.sh is for multiple devices in one sensor.
 
 Sensor has to be created in PRTG on your Synology device.
 
@@ -23,6 +23,8 @@ Place the script to /var/prtg/scriptsxml on your Synology NAS and make it execut
 
 ```
 wget https://raw.githubusercontent.com/WAdama/nas_ab_status/master/nas_ab_status.sh
+or
+wget https://raw.githubusercontent.com/WAdama/nas_ab_status/master/nas_ab_status_m.sh
 chmod +x nas_ab_status.sh
 ```
 
@@ -33,6 +35,15 @@ In PRTG create under your device which represents your Synology a SSH custom adv
 Choose under "Script" this script and enter under "Parameters" the name of the device backed up in Active Backup for Business you want to monitor: e.g. Server1.
 
 ![Screenshot1](https://github.com/WAdama/nas_ab_status/blob/master/images/nas_ab_status.png)
+
+For the multiple device sensor create a conf file in your Synology's file system.
+
+The configuration file must contain the following entry according to your devices:
+
+```
+DEVICE=(Device1 Device2 Server1 Server2)
+```
+Instead of the device name in "Parameters" enter path and name of config file.
 
 This script will set default values for limits in the Passed time channel:
 
