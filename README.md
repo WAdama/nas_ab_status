@@ -29,7 +29,9 @@ Choose under "Script" this script and enter under "Parameters" the name of the v
 ![Screenshot1](https://github.com/WAdama/nas_ab_status/blob/master/images/nas_ab_status.png)
 
 This script will set default values for limits in the Passed time channel:
+
 Upper warning limit: 36 h (129600 s)
+
 Upper error limit: 60 h (216000 s)
 
 ![Screenshot1](https://github.com/WAdama/nas_ab_status/blob/master/images/nas_ab_status_sensor.png)
