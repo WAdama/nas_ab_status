@@ -1,5 +1,5 @@
 # nas_ab_status
-Bash script for PRTG by PAessler to monitoring status of device backup in Synology Active Backup for Business in PRTG
+Bash script for PRTG by Paessler to monitoring status of device backup in Synology Active Backup for Business
 
 ### Prerequisites
 
