@@ -16,12 +16,6 @@
       <SingleInt state="Warning" value="5">
         Warning
       </SingleInt>
-      <SingleInt state="Warning" value="6">
-        Conflict
-      </SingleInt>
-      <SingleInt state="Warning" value="7">
-        Another backup exists
-      </SingleInt>
       <SingleInt state="Warning" value="8">
         Partial successful
       </SingleInt>
