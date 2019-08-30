@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
   <ValueLookup id="prtg.standardlookups.nas.abstatus" desiredValue="0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PaeValueLookup.xsd">
     <Lookups>
-      <SingleInt state="Ok" value="1">
-        Start
-      </SingleInt>
       <SingleInt state="Ok" value="2">
         Successful
       </SingleInt>
