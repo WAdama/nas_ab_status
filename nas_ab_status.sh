@@ -1,9 +1,15 @@
 #!/bin/bash
-# Version 1.0.1
+# Version 1.0.2
 
 DEVICE=$1
-IFS="|" read DEVRESULTID RESULTID CONFDEVICEID STATUS DEVICENAME TIMESTART TIMEEND BYTES  <<< `sqlite3 /volume1/@ActiveBackup/activity.db "select * from device_result_table where device_name like '$DEVICE'" | tail -1`
-
+IFS="|" read RESULTID STATUS DEVICEID DEVICENAME BYTES  <<< `sqlite3 /volume1/@ActiveBackup/activity.db "select result_id,status,config_device_id,device_name,transfered_bytes from device_result_table where device_name like '$DEVICE' ORDER BY result_id DESC LIMIT 1"`
+IFS="|" read TASKID  <<< `sqlite3 /volume1/@ActiveBackup/config.db "select task_id from backup_task_device where device_id like '$DEVICEID'"`
+IFS="|" read LOGID TIMESTART  <<< `sqlite3 /volume1/@ActiveBackup/activity.db "select log_id,log_time from log_table where task_id = '$TASKID' and log_type = '1101' ORDER BY log_time DESC LIMIT 1"`
+IFS="|" read TIMEEND  <<< `sqlite3 /volume1/@ActiveBackup/activity.db "select log_time from log_table where task_id = '$TASKID' and log_id > $LOGID and result_id = '$RESULTID' ORDER BY log_time DESC LIMIT 1"`
+if [ -z "$TIMEEND" ] || [ $TIMEEND -lt $TIMESTART ]
+	then 
+	TIMEEND=$TIMESTART
+fi
 ACTTIME=`date +%s`
 RUNTIME=$(($TIMEEND - $TIMESTART))
 LASTRUN=$(($ACTTIME - $TIMESTART))
