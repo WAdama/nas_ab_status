@@ -41,7 +41,7 @@ For the multiple device sensor create a conf file in your Synology's file system
 The configuration file must contain the following entry according to your devices:
 
 ```
-DEVICE=(Device1 Device2 Server1 Server2)
+DEVICES=(Device1 Device2 Server1 Server2)
 ```
 Instead of the device name in "Parameters" enter path and name of config file.
 
