@@ -45,7 +45,7 @@ DEVICES=(Device1 VM1 Server1 Server2)
 ```
 Instead of the device name in "Parameters" enter path and name of config file.
 
-This script will set default values for limits in the Passed time channel:
+This script will set default values for limits in the "Time Passed" channel:
 
 Upper warning limit: 36 h (129600 s)
 
