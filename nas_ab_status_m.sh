@@ -20,4 +20,5 @@ RUNTIME=$(($TIMEEND - $TIMESTART))
 LASTRUN=$(($ACTTIME - $TIMESTART))
 echo "<result><channel>DeviceID $DEVICE ($DEVICENAME): Last Backup</channel><value>$STATUS</value><ValueLookup>prtg.standardlookups.nas.abstatus</ValueLookup><ShowChart>0</ShowChart></result><result><channel>DeviceID $DEVICE: Duration</channel><value>$RUNTIME</value><unit>TimeSeconds</unit></result><result><channel>DeviceID $DEVICE: Time passed</channel><value>$LASTRUN</value><unit>TimeSeconds</unit><LimitMode>1</LimitMode><LimitMaxWarning>129600</LimitMaxWarning><LimitMaxError>216000</LimitMaxError></result><result><channel>DeviceID $DEVICE: Data transferred</channel><value>$BYTES</value><unit>BytesDisk</unit><VolumeSize>GigaByte</VolumeSize></result>"
 done
+echo "</prtg>"
 exit
