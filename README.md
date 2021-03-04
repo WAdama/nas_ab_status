@@ -34,7 +34,7 @@ In PRTG create under your device which represents your Synology a SSH custom adv
 
 Choose under "Script" this script and enter under "Parameters" the name of the device (PC or VM) backed up in Active Backup for Business you want to monitor and the name of the this device is using: e.g. Server1 Task1
 
-![Screenshot1](https://github.com/WAdama/nas_ab_status/blob/Test/images/nas_ab_status.png)
+![Screenshot1](./images/nas_ab_status.png)
 
 For the multiple device sensor create a conf file in your Synology's file system.
 
@@ -52,4 +52,4 @@ Upper warning limit: 36 h (129600 s)
 
 Upper error limit: 60 h (216000 s)
 
-![Screenshot1](https://github.com/WAdama/nas_ab_status/blob/Test/images/nas_ab_status_sensor.png)
+![Screenshot1](./images/nas_ab_status_sensor.png)
