@@ -52,4 +52,6 @@ Upper warning limit: 36 h (129600 s)
 
 Upper error limit: 60 h (216000 s)
 
+If the backup has not been run yet the values will be set to "0".
+
 ![Screenshot1](./images/nas_ab_status_sensor.png)
