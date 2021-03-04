@@ -13,7 +13,7 @@ Be sure you have set correct logon values for SSH in your device.
 
 I personally use "Login via private key" with an user especially for monitoring which also may use sudo for this script without a password.
 
-![Screenshot1](https://github.com/WAdama/nas_ab_status/Test/images/ssh_settings.png)
+![Screenshot1](https://github.com/WAdama/nas_ab_status/blob/Test/images/ssh_settings.png)
 
 **HINT:** Since DSM 6.2.2 for SSH access the user has to be member of the local Administrators group on your Synology NAS.
 
