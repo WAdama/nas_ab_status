@@ -13,7 +13,7 @@ Be sure you have set correct logon values for SSH in your device.
 
 I personally use "Login via private key" with an user especially for monitoring which also may use sudo for this script without a password.
 
-![Screenshot1](https://github.com/WAdama/nas_ab_status/blob/master/images/ssh_settings.png)
+![Screenshot1](./images/ssh_settings.png)
 
 **HINT:** Since DSM 6.2.2 for SSH access the user has to be member of the local Administrators group on your Synology NAS.
 
@@ -34,7 +34,7 @@ In PRTG create under your device which represents your Synology a SSH custom adv
 
 Choose under "Script" this script and enter under "Parameters" the name of the device (PC or VM) backed up in Active Backup for Business you want to monitor: e.g. Server1 or VM1.
 
-![Screenshot1](https://github.com/WAdama/nas_ab_status/blob/master/images/nas_ab_status.png)
+![Screenshot1](./images/nas_ab_status.png)
 
 For the multiple device sensor create a conf file in your Synology's file system.
 
@@ -51,4 +51,4 @@ Upper warning limit: 36 h (129600 s)
 
 Upper error limit: 60 h (216000 s)
 
-![Screenshot1](https://github.com/WAdama/nas_ab_status/blob/master/images/nas_ab_status_sensor.png)
+![Screenshot1](./master/images/nas_ab_status_sensor.png)
