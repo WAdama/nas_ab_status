@@ -57,3 +57,6 @@ If the backup has not been run yet the values will be set to "0".
 **HINT:** To have no hickups with the channel names, all device and task names will be changed to uper case.
 
 ![Screenshot1](./images/nas_ab_status_sensor.png)
+
+![Screenshot1](./images/nas_ab_status_sensor2.png)
+
