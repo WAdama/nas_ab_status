@@ -46,6 +46,8 @@ TASK=Task1
 ```
 Instead of the device name in "Parameters" enter path and name of config file.
 
+**HINT:** If you're using special characters from your language like the german Umlaut, set the parameters into quotation marks!
+
 This script will set default values for limits in the "Time Passed" channel:
 
 Upper warning limit: 36 h (129600 s)
