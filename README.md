@@ -43,12 +43,12 @@ For the multiple device sensor create a conf file in your Synology's file system
 The configuration file must contain the following entry according to your devices. Every device has to be using the same task:
 
 ```
-DEVICES=(Device1 VM1 Server1 Server2)
-TASK=Task1
+DEVICES=("Device1" "VM1" "Server1" "Server2")
+TASK="Task1"
 ```
 Instead of the device name in "Parameters" enter path and name of config file.
 
-**HINT:** If you're using special characters from your language like the german Umlaut, set the parameters into quotation marks!
+**HINT:** Us all the time quotation marks around the names to get no side effects because of special characters!
 
 This script will set default values for limits in the "Time Passed" channel:
 
