@@ -9,6 +9,8 @@ Sensor tested on DS 918+ with DSM 6.2.4-25556 and Active Backup for Business 2.1
 
 ### Prerequisites
 
+Access to the SQLite database files requires root access so the script has to run with sudo or equivalent rights.
+
 Be sure you have set correct logon values for SSH in your device.
 
 I personally use "Login via private key" with an user especially for monitoring which also may use sudo for this script without a password.
