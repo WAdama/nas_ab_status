@@ -5,7 +5,7 @@ The sensor will show the status of the last backup, how many data were transferr
 
 Sensor has to be created in PRTG on your Synology device.
 
-Sensor tested on DS 918+ with DSM 6.2.4-25556
+Sensor tested on DS 918+ with DSM 6.2.4-25556 and Active Backup for Business 2.1.1-1125
 
 ### Prerequisites
 
