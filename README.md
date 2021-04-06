@@ -24,9 +24,9 @@ I personally use "Login via private key" with an user especially for monitoring 
 Place the script to /var/prtg/scriptsxml on your Synology NAS and make it executable. (You may have to create this directory structure because PRTG expects the script here.)
 
 ```
-wget https://raw.githubusercontent.com/WAdama/nas_ab_status/Test/nas_ab_status.sh
+wget https://raw.githubusercontent.com/WAdama/nas_ab_status/master/nas_ab_status.sh
 or
-wget https://raw.githubusercontent.com/WAdama/nas_ab_status/test/nas_ab_status_m.sh
+wget https://raw.githubusercontent.com/WAdama/nas_ab_status/master/nas_ab_status_m.sh
 chmod +x nas_ab_status(_m).sh
 ```
 
