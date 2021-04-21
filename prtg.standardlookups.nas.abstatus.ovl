@@ -4,6 +4,9 @@
       <SingleInt state="None" value="0">
         No backup
       </SingleInt>
+      <SingleInt state="Ok" value="1">
+        Running
+      </SingleInt>
       <SingleInt state="Ok" value="2">
         Successful
       </SingleInt>
