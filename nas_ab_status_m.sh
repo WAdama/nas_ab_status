@@ -1,5 +1,5 @@
 #!/bin/bash
-# Version 1.0.4
+# Version 1.0.5
 
 CONF=$1
 source $CONF
@@ -38,5 +38,5 @@ else
 fi
 echo "<result><channel>$DEVICENAME: Last Backup</channel><value>$STATUS</value><ValueLookup>prtg.standardlookups.nas.abstatus</ValueLookup><ShowChart>0</ShowChart></result><result><channel>$DEVICENAME: Duration</channel><value>$RUNTIME</value><unit>TimeSeconds</unit></result><result><channel>$DEVICENAME: Time passed</channel><value>$LASTRUN</value><unit>TimeSeconds</unit><LimitMode>1</LimitMode><LimitMaxWarning>129600</LimitMaxWarning><LimitMaxError>216000</LimitMaxError></result><result><channel>$DEVICENAME: Data transferred</channel><value>$BYTES</value><unit>BytesDisk</unit><VolumeSize>GigaByte</VolumeSize></result>"
 done
-echo "<text>Task $TASK: ${DEVICES[@]}</text></prtg>"
+echo "<text>Task $TASK: `echo ${DEVICES[@]} | awk -v OFS=" / " '{$1=$1;print}'`</text></prtg>"
 exit
