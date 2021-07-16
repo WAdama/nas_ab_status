@@ -30,7 +30,7 @@ wget https://raw.githubusercontent.com/WAdama/nas_ab_status/master/nas_ab_status
 chmod +x nas_ab_status(_m).sh
 ```
 
-On your PRTG system place the file prtg.standardlookups.nas.abstatus.ovl in *INSTALLDIR\PRTG Network Monitor\lookups\custom* and refresh it under **System Administration / Administrative Tools**
+On your PRTG system place the ovl files in *INSTALLDIR\PRTG Network Monitor\lookups\custom* and refresh it under **System Administration / Administrative Tools**
 
 In PRTG create under your device which represents your Synology a SSH custom advanced senor.
 
