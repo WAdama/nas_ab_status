@@ -2,25 +2,22 @@
   <ValueLookup id="prtg.standardlookups.nas.abstatus" desiredValue="0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PaeValueLookup.xsd">
     <Lookups>
       <SingleInt state="None" value="0">
-        No backup
+        None
       </SingleInt>
-      <SingleInt state="Ok" value="1">
-        Running
+      <SingleInt state="Warning" value="1">
+        Incomplete
       </SingleInt>
       <SingleInt state="Ok" value="2">
         Successful
       </SingleInt>
       <SingleInt state="Warning" value="3">
-        Canceled
+        Partial successful
       </SingleInt>
       <SingleInt state="Error" value="4">
-        Failed
+        Failure
       </SingleInt>
       <SingleInt state="Warning" value="5">
-        Warning
-      </SingleInt>
-      <SingleInt state="Warning" value="8">
-        Partial successful
+        Canceled
       </SingleInt>
     </Lookups>
   </ValueLookup>
