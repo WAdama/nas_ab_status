@@ -1,5 +1,5 @@
 #!/bin/bash
-# Version 1.0.8
+# Version 1.0.9
 
 CONF=$1
 source $CONF
@@ -21,7 +21,7 @@ then
 fi
 if [ -z "$DEVICENAME" ]
 then
-	STATUS=1
+	STATUS=0
 	DEVICENAME=$DEVICE
 	BYTES=0
 fi
