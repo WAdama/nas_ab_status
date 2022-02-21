@@ -1,5 +1,5 @@
 #!/bin/bash
-# Version 1.0.7
+# Version 1.0.8
 
 DEVICE=${1^^}
 TASK=${2^^}
@@ -17,7 +17,7 @@ then
 fi
 if [ -z "$DEVICENAME" ]
 then
-	STATUS=1
+	STATUS=0
 	DEVICENAME=$DEVICE
 	BYTES=0
 fi
