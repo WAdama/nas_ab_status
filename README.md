@@ -7,7 +7,7 @@ Sensor has to be created in PRTG on your Synology device.
 
 Sensor tested on DS 918+ with DSM 7.2.1-69057 / Active Backup for Business 2.6.2-23081
 
-Thanks to https://github.com/r2evans I could change the access to the sqlite database to just one query. See also https://github.com/WAdama/nas_ab_status/issues/8 .
+Thanks to https://github.com/r2evans I could change the access to the sqlite database to just one query. See also issue https://github.com/WAdama/nas_ab_status/issues/8 .
 
 ### Prerequisites
 
