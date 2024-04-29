@@ -38,7 +38,7 @@ Choose under "Script" this script and enter under "Parameters" the name of the t
 
 ![Screenshot1](./images/nas_ab_status_set.png)
 
-**HINT:** Us all the time quotation marks around the names to get no side effects because of special characters!
+**HINT:** Use all the time quotation marks around the names to get no side effects because of special characters!
 
 This script will set default values for limits in the "Last Job Run" channel:
 
