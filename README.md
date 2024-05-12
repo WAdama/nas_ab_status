@@ -27,7 +27,7 @@ Place the script to /var/prtg/scriptsxml on your Synology NAS and make it execut
 
 ```
 wget https://raw.githubusercontent.com/WAdama/nas_ab_status/master/nas_ab_status.sh
-chmod +x nas_ab_status(_m).sh
+chmod +x nas_ab_status.sh
 ```
 
 On your PRTG system place the ovl files in *INSTALLDIR\PRTG Network Monitor\lookups\custom* and refresh it under **System Administration / Administrative Tools**
