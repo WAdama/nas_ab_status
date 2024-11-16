@@ -1,5 +1,5 @@
 #!/bin/bash
-# Version 2.0.0
+# Version 2.0.1
 # DB query realised with the help of https://github.com/r2evans, see also https://github.com/WAdama/nas_ab_status/issues/8
 
 TASK=$1
@@ -27,22 +27,22 @@ case $SPEED in
 esac
 if [ -z "$DEVICENAME" ]
 then
-	STATUS=0
-	BYTES=0
+    STATUS=0
+    BYTES=0
 fi
 ACTTIME=$(date +%s)
 if [ -z "$TIMEEND" ] || [ "$TIMEEND" -lt "$TIMESTART" ]
-	then 
-	TIMESTART=$ACTTIME
-	TIMEEND=$ACTTIME
+    then 
+    TIMESTART=$ACTTIME
+    TIMEEND=$ACTTIME
 fi
 if [ "$TIMESTART" -eq 0 ]
 then
-	RUNTIME=0
-	LASTRUN=0
+    RUNTIME=0
+    LASTRUN=0
 else
-	RUNTIME=$(("$TIMEEND"-"$TIMESTART"))
-	LASTRUN=$(("$ACTTIME"-"$TIMESTART"))
+    RUNTIME=$(("$TIMEEND"-"$TIMESTART"))
+    LASTRUN=$(("$ACTTIME"-"$TIMEEND"))
 fi
 echo "<result><channel>${DEVICENAME%%.*}: Status</channel><value>$STATUS</value><ValueLookup>prtg.standardlookups.nas.abstatus</ValueLookup><ShowChart>0</ShowChart></result><result><channel>${DEVICENAME%%.*}: Job Scheduled</channel><value>$SCHEDULED</value><ValueLookup>prtg.standardlookups.nas.abstatus.scheduled</ValueLookup><ShowChart>0</ShowChart></result><result><channel>${DEVICENAME%%.*}: Duration</channel><value>$RUNTIME</value><unit>TimeSeconds</unit></result><result><channel>${DEVICENAME%%.*}: Last Job Run</channel><value>$LASTRUN</value><unit>TimeSeconds</unit><LimitMode>1</LimitMode><LimitMaxWarning>129600</LimitMaxWarning><LimitMaxError>216000</LimitMaxError></result><result><channel>${DEVICENAME%%.*}: Data transferred</channel><value>$BYTES</value><unit>BytesDisk</unit><VolumeSize>GigaByte</VolumeSize></result>"
 if [ "$SOURCE" -ne "0" ]
