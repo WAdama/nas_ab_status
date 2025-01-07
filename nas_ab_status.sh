@@ -14,7 +14,7 @@ select * from (
     left join backup_task_device btd on dt.device_id = btd.device_id left join task_table tt on tt.task_id = btd.task_id left join result_table rt on rt.task_id = btd.task_id left join device_result_table drt on rt.result_id = drt.result_id left join result_detail_table rdt on rt.result_id = rdt.result_id left join log_table lt on rt.result_id = lt.result_id
   where (rt.job_action is null or rt.job_action = 1) and (rdt.log_type = '1111' or rdt.log_type = '1102') and (tt.task_name like '$TASK')
 )
-group by host_name having count (host_name) > 1" )
+group by host_name having count (host_name) > 0" )
 echo "<?xml version=\"10.0\" encoding=\"UTF-8\" ?><prtg>"
 for ONEDEVICE in "${ALLDEVICES[@]}"
 do
